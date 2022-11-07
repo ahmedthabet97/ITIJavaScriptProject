@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        // var text = [
+        //     "iti",
+        //     " <br>A Computer Science Portal for itiNM<br> ",
+        //     "43"
+        // ];
+        // var userId = "";
+        // var i;
+        // for (i of text) {
+        //     userId += i;
+        // }
+        // document.getElementById("demo").innerHTML = userId;
+
+        const array1 = [1, 2, 3, 4];
+
+        // 0 + 1 + 2 + 3 + 4
+        const initialValue = 0;
+        const sumWithInitial = array1.reduce(
+            (previousValue, currentValue) => previousValue + currentValue,
+            initialValue
+        );
+
+        console.log(sumWithInitial);
+        function test(x)
+        {
+            return (x>5);
+        }
+        function greatfive() {
+            var arr = [6, 1, 8, 32, 35];
+
+            // check for odd number
+            var value = arr.every(test);//i =>{ i > 5});
+            console.log(value);
+        }
+        greatfive();
+    </script>
+</body>
+
+</html>
